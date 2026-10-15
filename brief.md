@@ -35,5 +35,7 @@ A Software Bill of Materials (SBOM) is a structured inventory of software compon
 Resource: CISA — Software Bill of Materials (SBOM) — https://www.cisa.gov/sbom
 
 ## Misconception in My Track
+A common misconception in software development is that an application is secure once its own source code has been reviewed and tested. In reality, applications often depend on third-party libraries, build tools, packages, and external services that may introduce vulnerabilities or compromise risks. Even well-written application code can be affected by a vulnerable dependency or a tampered build process. Software teams should therefore review dependencies, keep components updated, verify package sources, and protect build pipelines. Security must be considered throughout the software lifecycle, not treated as a final check before release.
 
 ## Open Question
+How can small software teams maintain reliable visibility into third-party dependencies and verify the integrity of their software build process when they have limited time, budget, and security expertise?
