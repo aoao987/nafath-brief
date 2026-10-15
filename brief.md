@@ -20,10 +20,19 @@ The OWASP Mobile Application Security Verification Standard (MASVS) provides a s
 Resource: OWASP Mobile Application Security Verification Standard (MASVS) — https://mas.owasp.org/MASVS/
 
 ## Networking
+The Border Gateway Protocol (BGP) allows networks to exchange information about the routes used to reach IP address prefixes. A BGP hijack can occur when a network announces routing information that causes traffic to take an unintended path, potentially leading to interception or disruption. Resource Public Key Infrastructure (RPKI) supports route-origin validation by allowing resource holders to authorize which autonomous systems may originate particular prefixes. Network operators can use Route Origin Authorizations (ROAs) and validation results to help identify invalid route announcements. RPKI reduces certain routing risks, but it does not prevent every type of BGP attack, so operators still need monitoring and sound routing policies.
+
+Resource: RIPE NCC — Resource Public Key Infrastructure (RPKI) — https://www.ripe.net/manage-ips-and-asns/resource-management/certification/
 
 ## Cybersecurity
+Log4Shell is a critical vulnerability identified as CVE-2021-44228 in Apache Log4j 2, a widely used Java logging library. Under vulnerable configurations, an attacker could trigger a JNDI lookup through crafted input, potentially enabling remote code execution. The vulnerability was especially concerning because logging libraries are often included indirectly through application dependencies. Organizations should identify affected Log4j versions across their environments, upgrade to a vendor-supported fixed version, and follow relevant vendor and security-agency guidance. Temporary mitigations may reduce exposure, but they should not replace appropriate patching and verification. Asset inventories and dependency monitoring help teams respond more quickly to similar vulnerabilities.
+
+Resource: CISA — Apache Log4j Vulnerability Guidance — https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a
 
 ## Data
+A Software Bill of Materials (SBOM) is a structured inventory of software components and their relationships within a product. It can identify direct and transitive dependencies, helping organizations understand which third-party packages are included in their applications. When a new vulnerability is disclosed, teams can use an SBOM to check whether affected components may be present and prioritize investigation and remediation. SBOMs are most useful when they are accurate, maintained, and linked to the software version being deployed. However, an SBOM does not prove that software is secure or automatically eliminate vulnerabilities; it provides visibility that supports vulnerability management and supply-chain risk assessment.
+
+Resource: CISA — Software Bill of Materials (SBOM) — https://www.cisa.gov/sbom
 
 ## Misconception in My Track
 
